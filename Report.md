@@ -1,7 +1,10 @@
 General description or introduction of the problem and your solution:<br>
 We are required to design a synthesizable version of Gaussian blur module. I designed a Gaussian blur module with correct functionality. And then I designed different versions of synthesizable Gaussian blur module by different stratus directives and compared the latencies and areas between them.<br>
+<br>
 Implementation details (data structure, flows and algorithms):<br>
 From Lab 6, we practiced how synthesizable Sobel filter module is designed. I implemented Gaussian blur module by changing Sobel filter into Gaussian blur filter. By changing the algoritm from Sobel filter to Gaussian blur, we can get the Gaussian blur module. Also, the data width of data channels between testbench and Gaussian blur is needed to be change in order to get correct functionality.<br>
+<br>
 Additional features of your design and models:<br>
 I added different stratus directives to do different hls strategies. I tried loop unrolling, pipelining, data path optimization and basic versions. The result of these strategies is shown in next part. Also, I added some codes in order to measure the total latency and average latency of different versions. Total latency is the latency needed to output whole Gaussian blurred picture and average latency is the latency needed to output one pixel of Gaussian blurred picture.<br>
+<br>
 Experimental results (on different benchmarks and settings):<br>
